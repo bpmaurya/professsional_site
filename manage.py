@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import absolute_import,unicode_literals
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
@@ -6,7 +7,12 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_oscar.settings')
+    try:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_oscar.settings.dev')
+    except:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_oscar.settings.prod')
+
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
