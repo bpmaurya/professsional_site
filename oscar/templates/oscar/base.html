@@ -48,9 +48,30 @@
         {% endblock %}
     </head>
 
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <body id="{% block body_id %}default{% endblock %}" class="{% block body_class %}default{% endblock %}">
         {# Main content goes in this 'layout' block #}
-        {% block layout %}{% endblock %}
+        {% block layout %}
+        
+        {% endblock %}
 
         {# Scripts loaded from a CDN. #}
         {% block cdn_scripts %}
@@ -70,7 +91,6 @@
         {% block footer %}
 
         {% endblock %}
-        
 
         <script src="{%  static "oscar/vendor/jquery/dist/jquery.min.js"%}"></script>
         <script src="{%  static "oscar/vendor/jquery-migrate/dist/jquery-migrate.min.js"%}"></script>
