@@ -7,4 +7,4 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.prod")
 
 application = get_wsgi_application()
 
-application = DjangoWhiteNoise(application)
+# application = DjangoWhiteNoise(application)
