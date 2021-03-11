@@ -1,1 +1,1 @@
-web: gunicorn Django_oscar.wsgi.prod
+web: gunicorn Django_oscar.wsgi
