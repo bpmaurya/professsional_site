@@ -9,11 +9,11 @@ WSGI_APPLICATION = 'Django_oscar.wsgi.prod.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_name',
-        'USER': 'db_user',
+        'NAME': 'd1v49r4m8vrl1t',
+        'USER': 'xoosusnhglapwq',
         'PASSWORD': 'db_password', 
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'ec2-54-161-239-198.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
