@@ -5,6 +5,7 @@ from .base import *
 DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1','djangodeecooper.herokuapp.com']
 WSGI_APPLICATION = 'Django_oscar.wsgi.prod.application'
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.prod")
 
 DATABASES = {
     'default': {
