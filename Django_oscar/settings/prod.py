@@ -3,7 +3,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1','djangodeecooper.herokuapp.com']
+ALLOWED_HOSTS = ['djangodeecooper.herokuapp.com','127.0.0.1']
 WSGI_APPLICATION = 'Django_oscar.wsgi.application'
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.prod")
 
