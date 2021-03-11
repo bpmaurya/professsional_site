@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
-    path('jet/', include('jet.urls', 'jet')),
+    # path('jet/', include('jet.urls', 'jet')),
     # path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     path('', include(apps.get_app_config('oscar').urls[0])),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
