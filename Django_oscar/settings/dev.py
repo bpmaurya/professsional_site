@@ -5,7 +5,7 @@ ALLOWED_HOSTS += ['127.0.0.1']
 DEBUG = True
 
 WSGI_APPLICATION = 'Django_oscar.wsgi.application'
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.dev")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.dev")
 
 
 # DATABASES = {
