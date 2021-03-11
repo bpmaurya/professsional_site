@@ -2,7 +2,7 @@
 
 from .base import *
 ALLOWED_HOSTS += ['127.0.0.1']
-DEBUG = True
+DEBUG = False
 
 WSGI_APPLICATION = 'Django_oscar.wsgi.application'
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.dev")
@@ -27,3 +27,5 @@ DATABASES = {
 }
 
 # CORS_ORIGIN_WHITELIST = ('http://localhost:8000', )
+
+# django_heroku.settings(locals())

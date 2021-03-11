@@ -8,7 +8,7 @@ WSGI_APPLICATION = 'Django_oscar.wsgi.application'
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Django_oscar.settings.prod")
 
 DATABASES = {
-    'default': {
+    'default': { 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd1v49r4m8vrl1t',
         'USER': 'xoosusnhglapwq',
@@ -26,3 +26,5 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+django_heroku.settings(locals())
