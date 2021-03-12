@@ -21,7 +21,7 @@ ALLOWED_HOSTS = ['djangodeecooper.herokuapp.com','127.0.0.1']
 
 INSTALLED_APPS = [
     # 'jet.dashboard',
-    # 'jet',
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     'treebeard',
     'sorl.thumbnail',   # Default thumbnail backend, can be replaced
     'django_tables2',
-    'whitenoise.runserver_nostatic', # for deployment on heroku
+    # 'whitenoise.runserver_nostatic', # for deployment on heroku
 
 ]
 SITE_ID = 1
