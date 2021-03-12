@@ -34,7 +34,7 @@
                     {% block nav_items %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {% block browse_store_text %}{% trans "Browse store" %}{% endblock %}
+                                {% block browse_store_text %}{% trans "All Categories" %}{% endblock %}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 {% category_tree depth=1 as tree_categories %}
@@ -60,4 +60,5 @@
             {% endblock %}
         </div>
     {% endblock %}
+    
 </nav>

@@ -11,7 +11,7 @@
 
     {# Site logo/title, mini-basket, browse dropdown and searchbox #}
     <header class="header containe">
-        <div class="page_inner">
+        <div class="page_inner mx-4">
             <div class="row justify-content-between">
                 {% include "oscar/partials/brand.html" %}
                 {# Mini-basket wrapped in a block so some templates can now display it #}
@@ -23,16 +23,18 @@
         {% endblock %}
     </header>
 
+
     {# Main content of page - other layout templates may override this block #}
     {% block content_wrapper %}
-        <div class="containe page">
-            <div class="page_inner">
+        <div class="containe page ">
+            <div class="page_inner mx-4">
                 {% block breadcrumbs %}{% endblock %}
                 {% block header %}
                     <div class="page-header">
                         <h1>{% block headertext %}{% endblock %}</h1>
                     </div>
                 {% endblock %}
+                
                 {% include "oscar/partials/alert_messages.html" %}
                 {% block subnavigation %}{% endblock %}
                 <div class="content">
