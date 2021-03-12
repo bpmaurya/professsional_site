@@ -15,7 +15,7 @@ SECRET_KEY = '(0jxv&p0c(g!cy$py7%pc_a3a02b^ieq2_isb0ejp)w&5j%7_5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangodeecooper.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['djangodeecooper.herokuapp.com','127.0.0.1','*']
 
 # Application definition
 
@@ -125,6 +125,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 WSGI_APPLICATION = 'Django_oscar.wsgi.application'
